@@ -1,0 +1,102 @@
+#info,#options{
+	display: inline-block;
+}
+#info{
+	height: 80%;
+	width: 80%;
+	float: left;
+	background-color: rgba(126,126,126,0.4);
+}
+#info div{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	border: 0;
+	outline: 0;
+	padding: 25px;
+	user-select: none;
+	transition: all 0.45s;
+	float: left;
+	background-color: rgb(23, 23, 23);
+}
+#info img{
+	width: 100%;
+	height: 100%;
+}
+#info div:hover{
+	background-color: green;
+}
+#info div:hover:after{
+	height: 150%;
+	background-color: green;
+}
+#info div:after{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height: 0;
+	position: absolute;
+	top:100%;
+	left:0;
+	background-color:rgb(23, 23, 23);
+	color: white;
+	font-family: 'Russo One', sans-serif;
+	font-size: 1.3vw;
+	white-space: wrap;
+	content: "";
+	transition: ease 0.4s;
+	overflow: hidden;
+}
+#logo_div:hover:after{
+	content: "CHANGE LOGO";
+}
+#user_div:hover:after{
+	content: "CHANGE LOGIN";
+}
+#email_div:hover:after{
+	content: "CHANGE EMAIL";
+}
+#options{
+	height: 80%;
+	width: 20%;
+	float:right;
+	background-color: rgba(126,126,126,0.4);
+}
+#options div{
+display: flex;
+height: 100%;
+flex-direction: column;
+align-items: stretch;
+user-select: none;
+}
+#options div button{
+	position: relative;
+	color:white;
+	font-size: 2vw;
+	font-family: 'Roboto', sans-serif;
+	outline: 0;
+	border: 0;
+	user-select: none;
+	flex-grow: 1;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+#options div button:before, #options div button:after{
+	background: green;
+  content: '';
+  position: absolute;
+  z-index: -1;
+	transition: all 0.5s;
+}
+#options div button:after{
+	height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+#options div button:hover:after {
+  width: 100%;
+}

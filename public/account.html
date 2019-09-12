@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ACCOUNT</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="styles/account_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/home_style.css">
+</head>
+<body>
+	<div class="bg-opacity">
+  <div class="content"></div>
+</div>
+
+<div id="menu_holder">
+	<div>
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
+	<a href="/chat" class="btn">Chat</a>
+	<a href="/friends" class="btn">Friends</a>
+	<a href="/cloud" class="btn">Cloud</a>
+	<a class="btn" style="border:3px solid white;">Account</a>
+	<a href="/logout" class="btn">Sign out</a>
+</div>
+
+<div id="menu_phone">
+<div id="right_div">
+	<a href="/chat">Chat</a>
+	<a href="/friends">Friends</a>
+	<a href="/cloud">Cloud</a>
+	<a href="/logout">Sign out</a>
+</div>
+<div id="left_div"></div>
+</div>
+
+<div id="info">
+<div id="logo_div">
+<img src="images/boy1.png">
+</div>
+<div id="user_div">
+<img src="images/user.png">
+</div>
+<div id="email_div">
+<img src="images/email.png">
+</div>
+</div>
+
+<div id="options">
+<div>
+<button id="account_btn" style="background-color: green;">My account</button>
+<button id="privacy_btn">Privacy settings</button>
+<button id="security_btn">Security settings</button>
+<button id="delete_btn">Delete account</button>
+</div>
+</div>
+
+<div id="popup">
+	<img src="images/close.png">
+	<label>Set your new e-mail</label>
+<input type="text" placeholder="Enter new email" id="emailin">
+<input type="text" placeholder="Re-enter email" id="reemail">
+<!--FILE UPLOAD-->
+
+<!-- -->
+<button id="submit_input">SUBMIT</button>
+	<em>Note: We will send confirmation mail to your e-mail</em>
+</div>
+<div style="width: 100%;height: 120px;"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>var klik_pom=false;</script>
+<script src="scripts/account_controller.js"></script>
+<script src="scripts/phone_controller.js"></script>
+</body>
+</html>

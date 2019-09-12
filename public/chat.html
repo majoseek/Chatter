@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chatterino</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/chat_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/home_style.css">
+</head>
+<body>
+	<div class="bg-opacity">
+  <div class="content"></div>
+</div>
+
+<div id="menu_holder">
+	<div>
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
+	<a class="btn" style="border:3px solid white;">Chat</a>
+	<a href="/friends" class="btn">Friends</a>
+	<a href="/cloud" class="btn">Cloud</a>
+	<a href="/account" class="btn">Account</a>
+	<a href="/logout" class="btn">Sign out</a>
+</div>
+<div id="menu_phone">
+<div id="right_div">
+	<a href="/account">Account</a>
+	<a href="/friends">Friends</a>
+	<a href="/cloud">Cloud</a>
+	<a href="/logout">Sign out</a>
+</div>
+<div id="left_div"></div>
+</div>
+
+<button id="welcome_btn">Start messaging now!</button>
+<div id="who_holder">
+	Start messaging now!
+</div>
+<div id="chat_holder">
+
+<!--div class="container darker">
+  <img src="images/email.png" alt="Avatar">
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  <span class="time-right">Do kogo</span>
+</div-->
+
+<!--div class="container">
+  <img src="images/email_wrong.png" alt="Avatar">
+  <p>Sweet! So, what do you wanna do today?</p>
+  <span class="time-right">Od kogo</span>
+</div-->
+</div>
+<div id="message_holder">
+<input type="text" placeholder="Enter message" id="messagef">
+</div>
+
+
+
+<div id="strzalka"><label>FRIENDS</label></div><div id="strzalka_img"><img src="images/arrow_right.png"></div>
+<div id="friends_menu">
+<div id="online">0 friends online</div>
+<!--div class="znajomy">
+<button>JakisLogin123</button>
+<img src="images/message_unread.png">
+<span></span>
+</div-->
+</div>
+<div style="width: 100%;height: 120px;"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>var klik_pom=false;</script>
+<script src="scripts/chat_controller.js"></script>
+<script src="scripts/phone_controller.js"></script>
+</body>
+</html>

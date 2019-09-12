@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FRIENDS</title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="styles/friends_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/home_style.css">
+</head>
+<body>
+	<div class="bg-opacity">
+  <div class="content"></div>
+</div>
+
+<div id="menu_holder">
+	<div>
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
+	<a href="/chat" class="btn">Chat</a>
+	<a class="btn" style="border:3px solid white;">Friends</a>
+	<a href="/cloud" class="btn">Cloud</a>
+	<a href="/account" class="btn">Account</a>
+	<a href="/logout" class="btn">Sign out</a>
+</div>
+
+<div id="menu_phone">
+<div id="right_div">
+	<a href="/chat">Chat</a>
+	<a href="/account">Account</a>
+	<a href="/cloud">Cloud</a>
+	<a href="/logout">Sign out</a>
+</div>
+<div id="left_div"></div>
+</div>
+
+<div id="options_holder">
+<div class="options" id="yourfriends_btn" style="background-color: green;">YOUR FRIENDS</div>
+<div class="options" id="makefriends_btn">MAKE FRIENDS</div>
+<div class="options" id="friendrequests_btn">FRIEND REQUESTS</div>
+<!--div class="options">
+<input type="text" placeholder="Find friend">
+</div-->
+</div>
+
+<div id="main_holder">
+<div id="yourfriends_div">
+<!--div class="yourfriends">
+<img src="images/email.png">
+<label>Imie Nazwisko</label>
+</div-->
+</div>
+
+<!--22222222222222222222222222222222222-->
+
+<div id="makefriends_div">
+<!--div class="makefriends">
+<img src="images/klodka.png">
+<button>ADD</button>
+<label>Imie Nazwisko</label>
+</div-->
+</div>
+<div id="friendrequests_div">
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>var klik_pom=false;</script>
+<script src="scripts/friend_controller.js"></script>
+<script src="scripts/phone_controller.js"></script>
+</body>
+</html>

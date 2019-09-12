@@ -1,0 +1,20 @@
+{
+  "name": "chatter",
+  "version": "1.0.0",
+  "description": "Chatting app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mati",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "ip": "^1.1.5",
+    "mysql": "^2.17.1",
+    "nodemailer": "^6.3.0",
+    "socket.io": "^2.2.0",
+    "util": "^0.12.1"
+  }
+}

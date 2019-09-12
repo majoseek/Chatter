@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HELLO</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="styles/home_style.css">
+	<link rel="stylesheet" type="text/css" href="styles/swiper.css">
+
+</head>
+<body>
+
+<div class="bg-opacity">
+  <div class="content"></div>
+</div>
+<div style="min-height: 100%;"> 
+<div id="menu_holder">
+    <div>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    <a class="btn" style="border:3px solid white; padding: 3% 0;">HOME</a>
+	<a href="/loginpage" class="btn" style=" padding: 3% 0;">LOGIN</a>
+	<a href="/registerpage" class="btn" style=" padding: 3% 0;">REGISTER</a>
+	<a href="#contactplace" class="btn" style=" padding: 3% 0;">CONTACT</a>
+</div>
+
+<div id="menu_phone">
+<div id="right_div">
+    <a href="/loginpage">Login</a>
+    <a href="/registerpage">Register</a>
+    <a href="#contactplace">CONTACT</a>
+</div>
+<div id="left_div"></div>
+</div>
+
+<!--WSTEP-->
+
+<label id="naglowek">CHATTERINO is the
+  <span
+     class="txt-rotate"
+     data-period="1000"
+     data-rotate='[ "rapidly growing messenger app.", "fastest messenger app.", "most secure messenger app.", "easiest messenger app.", "coolest messenger app!" ]'></span>
+</label>
+<div style="display: block; white-space: nowrap;">
+<!--SWIPER1-->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/sliderimg/1.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/2.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/3.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/4.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/5.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/6.jpg" style="width: 100%; height: 100%;"></div>
+        
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next" id="next1"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<!--SWIPER1-->
+<!--SWIPER2-->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/sliderimg/7.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/8.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/9.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/10.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/11.jpg" style="width: 100%; height: 100%;"></div>
+        <div class="swiper-slide"><img src="images/sliderimg/12.jpg" style="width: 100%; height: 100%;"></div>
+        
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next" id="next2"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<!--SWIPER2-->
+</div>
+<h1 class="ml3">Always be in touch</h1>
+<div style="display:block;white-space: nowrap;">
+<div id="description_holder" style="float:left; border-top-right-radius: 25px;border-bottom-right-radius: 25px;">
+    <label>What's chatterino?</label>
+    <br>
+    <br>
+<span>
+<p>Chatterino is the app that helps you in some daily tasks</p>
+<p>Store your files online</p>
+<p>Always be in touch with your friends</p>
+<p>You can be up to date with world news</p>
+</span>
+</div>
+
+<div id="description_holder" style="float:right;border-top-left-radius: 25px;border-bottom-left-radius: 25px;">
+    <label>Why chatterino?</label>
+    <br>
+    <br>
+<span>
+<p>Best way of communication</p>
+<p>Most secure communication app</p>
+<p>Simple in handling</p>
+</span>
+</div>
+</div>
+<div style="height: 50px;"></div>
+</div>
+<footer id="footer">
+	<label id="contactplace">Contact us</label>
+    <div id="contacthrefs">
+	<a href="mailto:matuslaw.programming@gmail.com?subject=Need help #0000&body=Describe your problem" id="mailhref">Send e-mail</a>
+	<a href="map" id="maphref">Find us on map</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="scripts/home_controller.js"></script>
+<script src="scripts/swiper_main.js"></script>
+<script src="scripts/swiper.js"></script>
+<script>var klik_pom=false;</script>
+<script src="scripts/labelcontroller.js"></script>
+<script src="scripts/phone_controller.js"></script>
+</body>
+</html>
