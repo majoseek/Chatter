@@ -19,10 +19,10 @@ var userip;
 var online=[];
 var countonline=0;
 var dbconfig={
-  host: "iryba.pl",
-  user: "29647948_mat",
-  password: "DBMAT_19692000",
-  database: "29647948_mat"
+  host: "*******",
+  user: "********",
+  password: "***********",
+  database: "*************"
 };
 var con;
 //
@@ -52,8 +52,8 @@ handleDisconnect();
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'matuslaw.programming@gmail.com',
-    pass: 'mateuszxx11'
+    user: '*******************',
+    pass: '***************'
   }
 });
 
