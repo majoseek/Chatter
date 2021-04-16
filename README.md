@@ -10,4 +10,4 @@ Program, finds people near your who have account on Chatter. You can add them to
 Socket.io gives an opportunity to message your friends\
 MySQL database keeps message history and stores a graph which represents list of friends for every user\
 Express.js makes connection to the server\
-Nodemailer is used to confirm account changes\
+Nodemailer is used to confirm account changes
